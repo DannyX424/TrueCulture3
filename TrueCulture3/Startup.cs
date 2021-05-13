@@ -10,6 +10,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authorization;
+using TrueCulture3.Models;
 
 namespace TrueCulture3
 {
@@ -28,11 +29,11 @@ namespace TrueCulture3
             services.AddControllersWithViews();
             services.AddRazorPages();
 
-            services.AddAuthorization(opt =>
-            {
-                opt.FallbackPolicy = new AuthorizationPolicyBuilder().RequireAuthenticatedUser().Build();
-            });
-
+            //services.AddAuthorization(opt =>
+            //{
+            //    opt.FallbackPolicy = new AuthorizationPolicyBuilder().RequireAuthenticatedUser().Build();
+            //});
+            services.AddDbContext<TC3Context>(options => options.UseSqlServer(Configuration.GetConnectionString("DbTrueCulture")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
