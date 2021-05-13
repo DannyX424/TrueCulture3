@@ -14,7 +14,7 @@ namespace TrueCulture3.Models
         {
             
         }
-        public DbSet<TC3Context> Translations;
-        public DbSet<TrueCulture3.Models.Translation> Translation { get; set; }
+        //public DbSet<TC3Context> Translations;
+        public DbSet<Translation> Translation { get; set; }
     }
 }

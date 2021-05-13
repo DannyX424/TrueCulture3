@@ -10,6 +10,12 @@ namespace TrueCulture3.Controllers
     public class LessonController : Controller
     {
         private readonly TC3Context _context;
+        public LessonController(TC3Context context)
+        {
+            _context = context;
+        }
+
+        Random r = new Random();
         public IActionResult Index()
         {
             return View();
@@ -46,13 +52,19 @@ namespace TrueCulture3.Controllers
                  }
 
             return RedirectToAction("Home", "Index");
-            
-
-            
 
 
             
-           
+            }
+
+
+        public ViewResult Quiz()
+        {
+            var Question = _context.Translation
+                .Where(x => x.Id == 11)
+                .ToList<Translation>();
+
+            return View(Question[0]);
         }
     }
 }

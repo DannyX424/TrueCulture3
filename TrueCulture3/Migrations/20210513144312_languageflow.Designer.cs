@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TrueCulture3.Models;
 
 namespace TrueCulture3.Migrations
 {
     [DbContext(typeof(TC3Context))]
-    partial class TC3ContextModelSnapshot : ModelSnapshot
+    [Migration("20210513144312_languageflow")]
+    partial class languageflow
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
