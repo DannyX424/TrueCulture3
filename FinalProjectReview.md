@@ -2,7 +2,8 @@
 
 Describe project experience including each phase of the SDLC and the project artifacts (design documents, requirements trace, test reports...)
 code and architecture walk-through
-Gathering the requirements for the project was not simple. Many users would have multiple purposes for the application, and most of those requirements had to be met. Once the requirement was fulfilled, the presentation had to be implemented. The design of the project was thought out and created using Google slides. After the design was created and implemented and the testing phase was successful, the project was ready to be deployed.
+Gathering the requirements for the project was not simple. Many users would have multiple purposes for the application, and most of those requirements had to be met.
+Once the requirement was fulfilled, the presentation had to be implemented. The design of the project was thought out and created using Google slides. After the design was created and implemented and the testing phase was successful, the project was ready to be deployed.
 
 lessons learned:
 
